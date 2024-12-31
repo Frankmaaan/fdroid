@@ -33,7 +33,6 @@ jobs:
         run: |
           echo "${{ secrets.KEYSTORE_P12 }}" | base64 -d - > fdroid/keystore.p12
           echo "${{ secrets.CONFIG_YML }}" | base64 -d - > fdroid/config.yml
-          cat fdroid/config.yml
 
       - uses: actions/setup-go@v2
         name: Set up Go
